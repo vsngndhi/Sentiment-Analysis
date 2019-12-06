@@ -9,3 +9,15 @@ This includes experimenting with SVM with linear, rbf and sigmoid kernels with c
 
 # DM_Project.py
 This is a python file dealing with deep learning keras. Here experiments were conducted by keeping embedding layer, embedding plus 1 hidden layer and embedding plus 2 hidden layers in the sequential keras model
+
+# DM-Project-Values1.xls
+This is output file containing values for accuracy, precision, recall and F-Score for embedding layer
+
+# DM-Project-Values2.xls
+This is output file containing values for accuracy, precision, recall and F-Score for embedding layer plus 1 hidden layer
+
+# DM-Project-Values3.xls
+This is output file containing values for accuracy, precision, recall and F-Score for embedding layer plus 2 hidden layers
+
+# DM-Presentation.pptx
+Presentation for the entire project
