@@ -21,3 +21,6 @@ This is output file containing values for accuracy, precision, recall and F-Scor
 
 # DM-Presentation.pptx
 Presentation for the entire project
+
+# DM-Project-Report.docx
+Complete report of the project
