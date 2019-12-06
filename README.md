@@ -15,9 +15,11 @@ This is output file containing values for accuracy, precision, recall and F-Scor
 
 # DM-Project-Values2.xls
 This is output file containing values for accuracy, precision, recall and F-Score for embedding layer plus 1 hidden layer
+To test this layer uncomment lines 56,62,82 and 111 in DM_Project.py file. The output is train data followed by test data in each line.
 
 # DM-Project-Values3.xls
 This is output file containing values for accuracy, precision, recall and F-Score for embedding layer plus 2 hidden layers
+To test this layer uncomment lines 56,62, 63,82 and 111 in DM_Project.py file. The output is train data followed by test data in each line.
 
 # DM-Presentation.pptx
 Presentation for the entire project
