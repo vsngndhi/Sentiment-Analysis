@@ -79,7 +79,7 @@ print("Accuracy:", round(accuracy_score(comp['Actual'], comp['Predicted'])*100, 
 score = sklearn.metrics.classification_report(comp['Actual'], comp['Predicted'], output_dict=True)
 
 
-sheet1.write(row, 0, hn)
+#sheet1.write(row, 0, hn)
 sheet1.write(row, 1, round(accuracy_score(comp['Actual'], comp['Predicted']) * 100, 2))
 sheet1.write(row, 2, round(score['weighted avg']['precision'] * 100, 2))
 sheet1.write(row, 3, round(score['weighted avg']['recall'] * 100, 2))
@@ -108,7 +108,7 @@ comp = pd.DataFrame({'Actual': y_data_test, 'Predicted': y_pred_labels})
 print("Accuracy:", round(accuracy_score(comp['Actual'], comp['Predicted'])*100, 2))
 print(y_pred)
 score = sklearn.metrics.classification_report(comp['Actual'], comp['Predicted'], output_dict=True)
-sheet1.write(row, 0, hn)
+#sheet1.write(row, 0, hn)
 sheet1.write(row, 1, round(accuracy_score(comp['Actual'], comp['Predicted']) * 100, 2))
 sheet1.write(row, 2, round(score['weighted avg']['precision'] * 100, 2))
 sheet1.write(row, 3, round(score['weighted avg']['recall'] * 100, 2))
