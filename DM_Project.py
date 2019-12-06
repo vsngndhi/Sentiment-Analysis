@@ -11,14 +11,14 @@ from sklearn.model_selection import train_test_split
 import re
 from xlwt import Workbook
 
-#wb = Workbook()
-#sheet1 = wb.add_sheet('Sheet 1')
-#sheet1.write(0, 0, 'Neurons')
-#sheet1.write(0, 1, 'Accuracy')
-#sheet1.write(0, 2, 'Precision')
-#sheet1.write(0, 3, 'Recall')
-#sheet1.write(0, 4, 'F-Score')
-#row = 1
+wb = Workbook()
+sheet1 = wb.add_sheet('Sheet 1')
+sheet1.write(0, 0, 'Neurons')
+sheet1.write(0, 1, 'Accuracy')
+sheet1.write(0, 2, 'Precision')
+sheet1.write(0, 3, 'Recall')
+sheet1.write(0, 4, 'F-Score')
+row = 1
 
 
 data = pd.read_csv("/Users/varunnegandhi/Documents/Data Mining/IMDB Dataset.csv", encoding='latin1')
@@ -79,12 +79,12 @@ print("Accuracy:", round(accuracy_score(comp['Actual'], comp['Predicted'])*100, 
 score = sklearn.metrics.classification_report(comp['Actual'], comp['Predicted'], output_dict=True)
 
 
-    #sheet1.write(row, 0, hn)
-    #sheet1.write(row, 1, round(accuracy_score(comp['Actual'], comp['Predicted']) * 100, 2))
-    #sheet1.write(row, 2, round(score['weighted avg']['precision'] * 100, 2))
-    #sheet1.write(row, 3, round(score['weighted avg']['recall'] * 100, 2))
-    #sheet1.write(row, 4, round(score['weighted avg']['f1-score'] * 100, 2))
-    #row = row + 1
+sheet1.write(row, 0, hn)
+sheet1.write(row, 1, round(accuracy_score(comp['Actual'], comp['Predicted']) * 100, 2))
+sheet1.write(row, 2, round(score['weighted avg']['precision'] * 100, 2))
+sheet1.write(row, 3, round(score['weighted avg']['recall'] * 100, 2))
+sheet1.write(row, 4, round(score['weighted avg']['f1-score'] * 100, 2))
+row = row + 1
 
 data_test = pd.read_csv("/Users/varunnegandhi/Documents/Data Mining/dataset.csv", encoding='latin1')
 data_test['SentimentText'] = data_test['SentimentText'].str.lower()
@@ -108,10 +108,10 @@ comp = pd.DataFrame({'Actual': y_data_test, 'Predicted': y_pred_labels})
 print("Accuracy:", round(accuracy_score(comp['Actual'], comp['Predicted'])*100, 2))
 print(y_pred)
 score = sklearn.metrics.classification_report(comp['Actual'], comp['Predicted'], output_dict=True)
-    #sheet1.write(row, 0, hn)
-    #sheet1.write(row, 1, round(accuracy_score(comp['Actual'], comp['Predicted']) * 100, 2))
-    #sheet1.write(row, 2, round(score['weighted avg']['precision'] * 100, 2))
-    #sheet1.write(row, 3, round(score['weighted avg']['recall'] * 100, 2))
-    #sheet1.write(row, 4, round(score['weighted avg']['f1-score'] * 100, 2))
-    #row = row + 1
-    #wb.save('DM-Project-Values3.xls')
+sheet1.write(row, 0, hn)
+sheet1.write(row, 1, round(accuracy_score(comp['Actual'], comp['Predicted']) * 100, 2))
+sheet1.write(row, 2, round(score['weighted avg']['precision'] * 100, 2))
+sheet1.write(row, 3, round(score['weighted avg']['recall'] * 100, 2))
+sheet1.write(row, 4, round(score['weighted avg']['f1-score'] * 100, 2))
+row = row + 1
+wb.save('DM-Project-Values3.xls')
