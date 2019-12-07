@@ -1,6 +1,12 @@
 # Sentiment-Analysis
 This is my project for Data Mining Course wherein I predict the sentiment from text reviews. It involves solving the problem using 2 approaches - Machine Learning SVM and Deep Learning - Keras
 
+# Training Data
+The source of training data is: https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
+
+# Testing Data
+dataset.csv is the test data for this project
+
 # DMProject2.ipynb:
 This is the file which includes experimenting with SVM cost factor 0.1,1,10 and 100. Also it includes kernel type like linear, poly, rbf and sigmoid
 
